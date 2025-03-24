@@ -95,3 +95,7 @@ def compute_metrics(portfolio: pd.DataFrame):
         'Sharpe Ratio': sharpe_ratio,
         'Max Drawdown': max_drawdown
     }
+
+
+data = DataLoader.fetch_yahoo("AAPL", start="2023-01-01", end="2023-12-31")
+print(data.head(20))
